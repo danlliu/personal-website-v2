@@ -1,6 +1,5 @@
 #!/bin/sh
 
-set -Eeuo pipefail
 set -x
 
 # Begin build process
