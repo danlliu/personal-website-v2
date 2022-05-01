@@ -18,6 +18,7 @@ cd build
 
 git init
 git add -A
+git branch -m main
 git commit -m "Deploy to GitHub Pages"
 
 git push -f git@github.com:danlliu/personal-web.git main:deploy
