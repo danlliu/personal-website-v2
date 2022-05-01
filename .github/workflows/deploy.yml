@@ -39,5 +39,13 @@ jobs:
           git config --global user.email '66093915+danlliu@users.noreply.github.com'
           chmod +x deploy.sh
           ./deploy.sh
+          cd build
+
+          git init
+          git add -A
+          git branch -m main
+          git commit -m "Deploy to GitHub Pages"
+
+          git push -f git@github.com:danlliu/personal-web.git main:deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
