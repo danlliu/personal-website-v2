@@ -10,6 +10,6 @@ mkdir -p build/js
 mkdir -p build/css
 
 cp src/*.html build/
-cp src/js/* build/js
+[ -d "src/js" ] && cp src/js/* build/js
 
 # End build process
