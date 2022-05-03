@@ -7,6 +7,9 @@ set -x
 rm -rf build/
 mkdir build/
 
+ls
+ls build
+
 cp -R src/ build/
 [ -d "build/css" ] && mkdir -p build/css || true
 
