@@ -5,9 +5,7 @@ set -x
 # Begin build process
 
 rm -rf build/
-mkdir -p build/
-mkdir -p build/js
-mkdir -p build/css
+mkdir build/
 
 cp -R src/ build/
 [ -d "src/less" ] && for f in src/less/*.less; do lessc $f > build/css/$(basename $f .less).css; done || true
