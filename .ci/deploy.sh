@@ -9,7 +9,9 @@ mkdir -p build/
 mkdir -p build/js
 mkdir -p build/css
 
-cp src/*.html build/
-[ -d "src/js" ] && cp src/js/* build/js || true
+cp -R src/ build/
+[ -d "src/less" ] && for f in src/less/*.less; do lessc $f > build/css/$(basename $f .less).css; done || true
+
+python3 build/render_templates.py
 
 # End build process

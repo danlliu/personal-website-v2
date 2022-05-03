@@ -1,0 +1,103 @@
+
+// COLOR SCHEME
+@text: #131515ff;
+@text-light: #4c5b4cff;
+
+@accent1-light: #86bbd8ff;
+@accent1: #508aa8ff;
+@accent1-dark: #336699ff;
+
+@accent2-light: #9ee493ff;
+@accent2: #09814aff;
+@accent2-dark: #004f2dff;
+
+@accent3-light: #eee3abff;
+@accent3: #e2c044ff;
+@accent3-dark: #f1d302ff;
+
+// NORMALIZE COLORS
+* {
+    color: @text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    & small {
+        color: @text-light;
+    }
+}
+
+a {
+    color: @accent1;
+}
+
+a:visited {
+    color: @accent1-dark;
+}
+
+a:hover {
+    color: @accent1-dark;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.accordion-title {
+    border: 0 !important;
+}
+
+// CUSTOM STYLES
+
+#contents {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-group {
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
+
+section {
+    padding: 2rem;
+}
+
+#title {
+    background: linear-gradient(to bottom, #cdedf6ff, #d8d2e1ff);
+}
+
+#aboutme {
+    background: linear-gradient(to bottom, #d8d2e1ff, #c7efcfff);
+}
+
+#education {
+    background: linear-gradient(to bottom, #c7efcfff, #eef5dbff);
+}
+
+#courses {
+    background: linear-gradient(to bottom, #eef5dbff, #d8d8f6ff);
+}
+
+#projects {
+    background: linear-gradient(to bottom, #d8d8f6ff, #f6f4d2ff);
+}
+
+#work {
+    background: linear-gradient(to bottom, #f6f4d2ff, #e5dadaff);
+}
+
+#research {
+    background: linear-gradient(to bottom, #e5dadaff, #ddf2ebff);
+}
+
+#awards {
+    background: linear-gradient(to bottom, #ddf2ebff, #bbcea8ff)
+}
+
+#contact {
+    background: linear-gradient(to bottom, #bbcea8ff, #cdedf6ff);
+}
+
+// COMPONENTS
+

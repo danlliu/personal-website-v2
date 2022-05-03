@@ -1,0 +1,87 @@
+{% macro education(title, subtitle, degree, years, gpa) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4>{{ title }}</h3>
+            <h5>{{ subtitle }}</h5>
+            <h6>{{ years }}</h6>
+            <hr/>
+        </div>
+        <div class="card-section">
+            <h4 class="h5">{{ degree }}</h4>
+            <b>GPA: {{ gpa }}</b>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro coursepreview(title, subtitle) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4>{{ title }}</h4>
+            <h5><small>{{ subtitle }}</small></h5>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro course(title, subtitle, description) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4>{{ title }}</h4>
+            <h5><small>{{ subtitle }}</small></h5>
+        </div>
+        <div class="card-section">
+            <div class="accordion" data-accordion data-allow-all-closed="true">
+                <div class="accordion-item" data-accordion-item>
+                    <a class="accordion-title">more info...</a>
+                    <div class="accordion-content" data-tab-content>
+                        <p>{{ description|safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro projectpreview(title, subtitle, langs, lines) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4> {{ title }}</h4>
+            <h5><small>{{ subtitle }}</small></h5>
+            <p>
+                {% for lang in langs %}
+                    <span><i class="h4 devicon-{{ lang }}-original devicon-{{ lang }}-plain colored"> </i></span>
+                {% endfor %}
+                ({{lines}}+ LOC)
+            </p>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro workpreview(title, location, years) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4> {{ title }}</h4>
+            <h5><small>{{ location }}</small></h5>
+            <p>{{ years }}</p>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro researchpreview(title, location, years, advisor) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4> {{ title }}</h4>
+            <h5><small>{{ location }}</small></h5>
+            <b>Advisor: <a href="{{ advisor.link }}">{{ advisor.name }}</a></b>
+            <p>{{ years }}</p>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro awardpreview(title, year) -%}
+    <div class="card">
+        <div class="card-section">
+            <h4> {{ title }}</h4>
+            <h5><small>{{ year }}</small></h5>
+        </div>
+    </div>
+{%- endmacro %}
