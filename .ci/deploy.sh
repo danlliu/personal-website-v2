@@ -4,7 +4,8 @@ set -x
 
 # Begin build process
 
-rm -rf build/
+ls
+
 mkdir build/
 
 ls
