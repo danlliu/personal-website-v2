@@ -11,7 +11,7 @@ mkdir build/
 ls
 ls build
 
-cp -R src/ build/
+cp -R src/ build
 [ -d "build/css" ] && mkdir -p build/css || true
 
 ls
