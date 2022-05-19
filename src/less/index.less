@@ -1,57 +1,10 @@
 
-// COLOR SCHEME
-@text: #131515ff;
-@text-light: #4c5b4cff;
-
-@accent1-light: #86bbd8ff;
-@accent1: #508aa8ff;
-@accent1-dark: #336699ff;
-
-@accent2-light: #9ee493ff;
-@accent2: #09814aff;
-@accent2-dark: #004f2dff;
-
-@accent3-light: #eee3abff;
-@accent3: #e2c044ff;
-@accent3-dark: #f1d302ff;
-
-// NORMALIZE COLORS
-* {
-    color: @text;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    & small {
-        color: @text-light;
-    }
-}
-
-a {
-    color: @accent1;
-}
-
-a:visited {
-    color: @accent1-dark;
-}
-
-a:hover {
-    color: @accent1-dark;
-}
-
-.card {
-    border-radius: 1rem;
-}
-
-.accordion-title {
-    border: 0 !important;
-}
-
 // CUSTOM STYLES
 
 #contents {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .scroll-snap-group {
@@ -59,8 +12,8 @@ a:hover {
     min-height: 100vh;
 }
 
-section {
-    padding: 2rem;
+section div.show-for-large {
+    margin-top: 1rem;
 }
 
 #title {
@@ -75,6 +28,12 @@ section {
     background: linear-gradient(to bottom, #c7efcfff, #eef5dbff);
 }
 
+@media screen and (min-width: 1024px) {
+    #education {
+        background: linear-gradient(to bottom, #c7efcfff, #d8d8f6ff);
+    }
+}
+
 #courses {
     background: linear-gradient(to bottom, #eef5dbff, #d8d8f6ff);
 }
@@ -85,6 +44,12 @@ section {
 
 #work {
     background: linear-gradient(to bottom, #f6f4d2ff, #e5dadaff);
+}
+
+@media screen and (min-width: 1024px) {
+    #work {
+        background: linear-gradient(to bottom, #f6f4d2ff, #ddf2ebff);
+    }
 }
 
 #research {

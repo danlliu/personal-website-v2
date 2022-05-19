@@ -1,13 +1,13 @@
 {% macro education(title, subtitle, degree, years, gpa) -%}
     <div class="card">
         <div class="card-section">
-            <h4>{{ title }}</h3>
-            <h5>{{ subtitle }}</h5>
-            <h6>{{ years }}</h6>
+            <h3>{{ title }}</h3>
+            <h4>{{ subtitle }}</h4>
+            <h5>{{ years }}</h5>
             <hr/>
         </div>
         <div class="card-section">
-            <h4 class="h5">{{ degree }}</h4>
+            <h3 class="h5">{{ degree }}</h3>
             <b>GPA: {{ gpa }}</b>
         </div>
     </div>
@@ -16,8 +16,8 @@
 {% macro coursepreview(title, subtitle) -%}
     <div class="card">
         <div class="card-section">
-            <h4>{{ title }}</h4>
-            <h5><small>{{ subtitle }}</small></h5>
+            <h3 class="h4">{{ title }}</h3>
+            <h4 class="h5">{{ subtitle }}</h4>
         </div>
     </div>
 {%- endmacro %}
@@ -25,8 +25,8 @@
 {% macro course(title, subtitle, description) -%}
     <div class="card">
         <div class="card-section">
-            <h4>{{ title }}</h4>
-            <h5><small>{{ subtitle }}</small></h5>
+            <h3 class="h4">{{ title }}</h3>
+            <h4 class="h5">{{ subtitle }}</h4>
         </div>
         <div class="card-section">
             <div class="accordion" data-accordion data-allow-all-closed="true">
@@ -41,16 +41,74 @@
     </div>
 {%- endmacro %}
 
-{% macro projectpreview(title, subtitle, langs, lines) -%}
+{% macro projectpreview(title, subtitle, langs, lines, gh="", ghp="") -%}
     <div class="card">
         <div class="card-section">
-            <h4> {{ title }}</h4>
-            <h5><small>{{ subtitle }}</small></h5>
+            <h3 class="h4"> {{ title }}</h3>
+            <h4 class="h5"><small>{{ subtitle }}</small></h4>
             <p>
                 {% for lang in langs %}
-                    <span><i class="h4 devicon-{{ lang }}-original devicon-{{ lang }}-plain colored"> </i></span>
+                    {% if lang != "github" and lang != "githubpages" %}
+                        <!-- <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/{{ lang }}.svg" style="fill: #{{colors[lang]}}"/> -->
+                        <svg fill="#{{colors[lang]}}" height="32" width="32" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>{{ titles[lang] }}</title><path d="{{ paths[lang] }}"/></svg>
+                    {% endif %}
                 {% endfor %}
+            </p>
+            <p>
                 ({{lines}}+ LOC)
+            </p>
+            <p>
+                {% if "github" in langs %}
+                    <a href="{{ gh }}">
+                        <svg fill="#{{colors['github']}}" style="height: 1rem" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="{{ paths['github'] }}"/></svg>
+                         GitHub repository
+                    </a>
+                {% endif %}
+            </p>
+            <p>
+                {% if "githubpages" in langs %}
+                    <a href="{{ ghp }}">
+                        View on GitHub Pages
+                    </a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro project(title, subtitle, description, langs, lines, gh="", ghp="") -%}
+    <div class="card">
+        <div class="card-section">
+            <h3 class="h4"> {{ title }}</h3>
+            <h4 class="h5"><small>{{ subtitle }}</small></h4>
+            <p>
+                {% for lang in langs %}
+                    {% if lang != "github" and lang != "githubpages" %}
+                        <svg fill="#{{colors[lang]}}" height="32" width="32" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>{{ titles[lang] }}</title><path d="{{ paths[lang] }}"/></svg>
+                    {% endif %}
+                {% endfor %}
+            </p>
+            <p>
+                ({{lines}}+ LOC)
+            </p>
+            <p>
+                {% if "github" in langs %}
+                    <a href="{{ gh }}">
+                        <svg fill="#{{colors['github']}}" style="height: 1rem" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="{{ paths['github'] }}"/></svg>
+                         GitHub repository
+                    </a>
+                {% endif %}
+            </p>
+            <p>
+                {% if "githubpages" in langs %}
+                    <a href="{{ ghp }}">
+                        View on GitHub Pages
+                    </a>
+                {% endif %}
+            </p>
+            <hr/>
+            <p>
+                {{ description|safe }}
             </p>
         </div>
     </div>
@@ -59,20 +117,45 @@
 {% macro workpreview(title, location, years) -%}
     <div class="card">
         <div class="card-section">
-            <h4> {{ title }}</h4>
-            <h5><small>{{ location }}</small></h5>
+            <h3 class="h4"> {{ title }}</h3>
+            <h4 class="h5"><small>{{ location }}</small></h4>
             <p>{{ years }}</p>
         </div>
     </div>
 {%- endmacro %}
 
-{% macro researchpreview(title, location, years, advisor) -%}
+{% macro workexp(title, location, years, description) -%}
     <div class="card">
         <div class="card-section">
-            <h4> {{ title }}</h4>
-            <h5><small>{{ location }}</small></h5>
-            <b>Advisor: <a href="{{ advisor.link }}">{{ advisor.name }}</a></b>
+            <h3 class="h4"> {{ title }}</h3>
+            <h4 class="h5"><small>{{ location }}</small></h4>
             <p>{{ years }}</p>
+            <hr/>
+            <p>{{description|safe}}</p>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro researchpreview(title, location, years, advisors) -%}
+    <div class="card">
+        <div class="card-section">
+            <h3 class="h4"> {{ title }}</h3>
+            <h4 class="h5"><small>{{ location }}</small></h4>
+            <b>{% if advisors|length == 1 %}Advisor{% else %}Advisors{% endif %}: {% for advisor in advisors %}<a href="{{ advisor.link }}">{{ advisor.name }}</a> {% endfor %}</b>
+            <p>{{ years }}</p>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro researchexp(title, location, years, advisors, description) -%}
+    <div class="card">
+        <div class="card-section">
+            <h3 class="h4"> {{ title }}</h3>
+            <h4 class="h5"><small>{{ location }}</small></h4>
+            <b>{% if advisors|length == 1 %}Advisor{% else %}Advisors{% endif %}: {% for advisor in advisors %}<a href="{{ advisor.link }}">{{ advisor.name }}</a> {% endfor %}</b>
+            <p>{{ years }}</p>
+            <hr/>
+            <p>{{description|safe}}</p>
         </div>
     </div>
 {%- endmacro %}
@@ -80,8 +163,21 @@
 {% macro awardpreview(title, year) -%}
     <div class="card">
         <div class="card-section">
-            <h4> {{ title }}</h4>
-            <h5><small>{{ year }}</small></h5>
+            <h3> {{ title }}</h3>
+            <h4><small>{{ year }}</small></h4>
         </div>
     </div>
+{%- endmacro %}
+
+{% macro award(title, year) -%}
+    <div class="card">
+        <div class="card-section">
+            <h3> {{ title }}</h3>
+            <h4><small>{{ year }}</small></h4>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro simpleicon(name) -%}
+    <svg fill="#{{colors[name]}}" height="32" width="32" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>{{ titles[name] }}</title><path d="{{ paths[name] }}"/></svg>
 {%- endmacro %}
