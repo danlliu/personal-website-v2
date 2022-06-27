@@ -130,6 +130,15 @@
                 "ghp": "https://danlliu.github.io/creativewriting"
             },
             {
+                "title": "splitter",
+                "subtitle": "Bill Splitting Calculator",
+                "description": "Splitting the bill fairly is a lot of tedious math, so why not make a website for it?",
+                "langs": ["html5", "css3", "javascript", "react", "github", "githubpages"],
+                "loc": 300,
+                "gh": "https://github.com/danlliu/splitter",
+                "ghp": "https://danlliu.github.io/splitter"
+            },
+            {
                 "title": "chatroom",
                 "subtitle": "Live Chat Application",
                 "description": "Websockets provide a significant functionality upgrade to websites, allowing live updates between the client and the server to take place. Using socket.io, I created a simple chat application, allowing users to create new chat rooms and send messages in each room. The application runs on Express.js, Node.js, and Socket.io.",
