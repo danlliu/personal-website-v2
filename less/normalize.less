@@ -1,0 +1,52 @@
+
+// COLOR SCHEME
+@text: #131515ff;
+@text-light: #4c5b4cff;
+
+@accent1-light: #86bbd8ff;
+@accent1: #0353A4ff;
+@accent1-dark: #1c3969ff;
+
+@accent2-light: #9ee493ff;
+@accent2: #09814aff;
+@accent2-dark: #004f2dff;
+
+@accent3-light: #eee3abff;
+@accent3: #e2c044ff;
+@accent3-dark: #f1d302ff;
+
+// NORMALIZE COLORS
+* {
+    color: @text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    & small {
+        color: @text-light;
+    }
+}
+
+a {
+    color: @accent1;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: @accent1-dark;
+}
+
+a:hover {
+    color: @accent1-dark;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.accordion-title {
+    border: 0 !important;
+}
+
+section {
+    padding: 2rem;
+}

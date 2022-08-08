@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% import "components.html" as components with context %}
+
+{% block title %}daniel liu: resume{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/normalize.css" />
+{% endblock %}
+{% block content %}
+        <section id="title">
+            <h1>Daniel Liu</h1>
+            <p class="h4">danlliu@umich.edu | (734)-585-4865</p>
+            <a href="index.html"><i class="bi-house-fill"></i> Homepage</a>
+        </section>
+        <hr/>
+        <section id="education">
+            <h2>Education</h2>
+            <h3>University of Michigan <small>Ann Arbor, MI</small></h3>
+            <p><strong>College of Literature, Science, and the Arts</strong></p>
+            <p>Bachelor of Science, Computer Science</p>
+            <p>Bachelor of Science in Chemistry</p>
+            <p><strong>Ross School of Business</strong></p>
+            <p>Bachelor of Business Administration</p>
+        </section>
+        <hr/>
+        <section id="courses">
+            <h2>Coursework</h2>
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6 large-4">
+                    {% for course in courses %}
+                        {% if loop.index % 3 == 1 %}
+                            {{ components.course(course.title, course.subtitle, course.description) }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="cell medium-6 large-4">
+                    {% for course in courses %}
+                        {% if loop.index % 3 == 2 %}
+                            {{ components.course(course.title, course.subtitle, course.description) }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="cell large-4">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell medium-6 large-12">
+                            {% for course in courses %}
+                                {% if loop.index % 6 == 3 %}
+                                    {{ components.course(course.title, course.subtitle, course.description) }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="cell medium-6 large-12">
+                            {% for course in courses %}
+                                {% if loop.index % 6 == 0 %}
+                                    {{ components.course(course.title, course.subtitle, course.description) }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <section id="projects">
+            <h2>Personal Projects</h2>
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-6">
+                    {% for project in projects %}
+                        {% if loop.index % 2 == 1 %}
+                            {% set title = project.title %}
+                            {% set subtitle = project.subtitle %}
+                            {% set description = project.description %}
+                            {% set langs = project.langs %}
+                            {% set loc = project.loc %}
+                            {% set gh = project.gh %}
+                            {% set ghp = project.ghp %}
+                            {{ components.project(title, subtitle, description, langs, loc, gh, ghp) }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="cell large-6">
+                    {% for project in projects %}
+                        {% if loop.index % 2 == 0 %}
+                            {% set title = project.title %}
+                            {% set subtitle = project.subtitle %}
+                            {% set description = project.description %}
+                            {% set langs = project.langs %}
+                            {% set loc = project.loc %}
+                            {% set gh = project.gh %}
+                            {% set ghp = project.ghp %}
+                            {{ components.project(title, subtitle, description, langs, loc, gh, ghp) }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <section id="work">
+            <h2>Work Experience</h2>
+            <div class="grid-x grid-margin-x">
+                {% for exp in workExperience %}
+                    <div class="cell">
+                        {{ components.workexp(exp.title, exp.location, exp.years, exp.description) }}
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr/>
+        <section id="research">
+            <h2>Research Experience</h2>
+            <div class="grid-x grid-margin-x">
+                {% for exp in researchExperience %}
+                    <div class="cell">
+                        {{ components.researchexp(exp.title, exp.location, exp.years, exp.advisors, exp.description) }}
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr/>
+        <section id="awards">
+            <h2>Awards</h2>
+            <div class="grid-x grid-margin-x">
+                {% for award in awards %}
+                    <div class="cell medium-6">
+                        {{ components.award(award.name, award.year) }}
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr/>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Hover over each icon to see what it represents!</p>
+            <h3>Programming Languages:</h3>
+            <p>
+                {% for l in skills.languages.langs %}
+                    {{ components.simpleicon(l) }}
+                {% endfor %}
+            </p>
+            <h3>Frameworks and Libraries:</h3>
+            <p>
+                {% for l in skills.frameworks.langs %}
+                    {{ components.simpleicon(l) }}
+                {% endfor %}
+            </p>
+            <h3>IDEs and Editors:</h3>
+            <p>
+                {% for l in skills.ides.langs %}
+                    {{ components.simpleicon(l) }}
+                {% endfor %}
+            </p>
+            <h3>Operating Systems:</h3>
+            <p>
+                {% for l in skills.oses.langs %}
+                    {{ components.simpleicon(l) }}
+                {% endfor %}
+            </p>
+            <h3>Other Technologies / Software:</h3>
+            <p>
+                {% for l in skills.technologies.langs %}
+                    {{ components.simpleicon(l) }}
+                {% endfor %}
+            </p>
+        </section>
+{% endblock %}

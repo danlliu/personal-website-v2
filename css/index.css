@@ -1,0 +1,49 @@
+#contents {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+.scroll-snap-group {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+section div.show-for-large {
+  margin-top: 1rem;
+}
+#title {
+  background: linear-gradient(to bottom, #cdedf6ff, #d8d2e1ff);
+}
+#aboutme {
+  background: linear-gradient(to bottom, #d8d2e1ff, #c7efcfff);
+}
+#education {
+  background: linear-gradient(to bottom, #c7efcfff, #eef5dbff);
+}
+@media screen and (min-width: 1024px) {
+  #education {
+    background: linear-gradient(to bottom, #c7efcfff, #d8d8f6ff);
+  }
+}
+#courses {
+  background: linear-gradient(to bottom, #eef5dbff, #d8d8f6ff);
+}
+#projects {
+  background: linear-gradient(to bottom, #d8d8f6ff, #f6f4d2ff);
+}
+#work {
+  background: linear-gradient(to bottom, #f6f4d2ff, #e5dadaff);
+}
+@media screen and (min-width: 1024px) {
+  #work {
+    background: linear-gradient(to bottom, #f6f4d2ff, #ddf2ebff);
+  }
+}
+#research {
+  background: linear-gradient(to bottom, #e5dadaff, #ddf2ebff);
+}
+#awards {
+  background: linear-gradient(to bottom, #ddf2ebff, #bbcea8ff);
+}
+#contact {
+  background: linear-gradient(to bottom, #bbcea8ff, #cdedf6ff);
+}

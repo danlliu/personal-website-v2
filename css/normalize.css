@@ -1,0 +1,30 @@
+* {
+  color: #131515ff;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  color: #4c5b4cff;
+}
+a {
+  color: #0353A4ff;
+  text-decoration: underline;
+}
+a:visited {
+  color: #1c3969ff;
+}
+a:hover {
+  color: #1c3969ff;
+}
+.card {
+  border-radius: 1rem;
+}
+.accordion-title {
+  border: 0 !important;
+}
+section {
+  padding: 2rem;
+}

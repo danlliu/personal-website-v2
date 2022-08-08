@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% import "components.html" as components with context %}
+
+{% block title %}daniel liu{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+{% endblock %}
+{% block content %}
+        <section id="title" class="scroll-snap-group">
+            <h1>hello world, i'm daniel liu</h1>
+            <p>welcome to my website!</p>
+        </section>
+        <section id="aboutme" class="scroll-snap-group">
+            <h2><i class="bi-person-lines-fill"></i> about me</h2>
+            <p>{{ aboutme }}</p>
+        </section>
+        <section id="education" class="scroll-snap-group">
+            <h2><i class="bi-mortarboard"></i> education</h2>
+            <div class="grid-x grid-margin-x">
+                {% for educ in education %}
+                    {% set title = educ.title %}
+                    {% set subtitle = educ.subtitle %}
+                    {% set degree = educ.degree %}
+                    {% set years = educ.years %}
+                    {% set gpa = educ.gpa %}
+                    <div class="cell medium-6">
+                        {{ components.education(title, subtitle, degree, years, gpa) }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="show-for-large" aria-hidden="true">
+                <h2><i class="bi-book"></i> coursework</h2>
+                <div class="grid-x grid-margin-x">
+                    {% for course in featuredCourses %}
+                        <div class="cell medium-6 large-4">
+                            {{ components.coursepreview(course.title, course.subtitle) }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <a href="resume.html#courses">view all courses...</a>
+            </div>
+        </section>
+        <section id="courses" class="hide-for-large scroll-snap-group">
+            <h2><i class="bi-book"></i> coursework</h2>
+            <div class="grid-x grid-margin-x">
+                {% for course in featuredCourses %}
+                    <div class="cell medium-6 large-4">
+                        {{ components.coursepreview(course.title, course.subtitle) }}
+                    </div>
+                {% endfor %}
+            </div>
+            <a href="resume.html#courses">view all courses...</a>
+        </section>
+        <section id="projects" class="scroll-snap-group">
+            <h2><i class="bi-code-slash"></i> personal projects</h2>
+            <div class="grid-x grid-margin-x">
+                {% for project in featuredProjects %}
+                    {% set title = project.title %}
+                    {% set subtitle = project.subtitle %}
+                    {% set langs = project.langs %}
+                    {% set loc = project.loc %}
+                    {% set gh = project.gh %}
+                    {% set ghp = project.ghp %}
+                    {% if loop.index <= 3 %}
+                    <div class="cell medium-6 large-4">
+                        {{ components.projectpreview(title, subtitle, langs, loc, gh, ghp) }}
+                    </div>
+                    {% elif loop.index <= 4 %}
+                    <div class="cell medium-6 large-4 show-for-medium">
+                        {{ components.projectpreview(title, subtitle, langs, loc, gh, ghp) }}
+                    </div>
+                    {% else %}
+                    <div class="cell medium-6 large-4 show-for-large">
+                        {{ components.projectpreview(title, subtitle, langs, loc, gh, ghp) }}
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <a href="resume.html#projects">view all projects...</a>
+        </section>
+        <section id="work" class="scroll-snap-group">
+            <h2><i class="bi-briefcase"></i> work experience</h2>
+            <div class="grid-x grid-margin-x">
+                {% for exp in workExperience %}
+                    <div class="cell large-6">
+                        {{ components.workpreview(exp.title, exp.location, exp.years) }}
+                    </div>
+                {% endfor %}
+            </div>
+            <a href="resume.html#work">view all work experience...</a>
+            <div class="show-for-large" aria-hidden="true">
+                <h2><i class="bi-clipboard-data"></i> research experience</h2>
+                <div class="grid-x grid-margin-x">
+                    {% for exp in researchExperience %}
+                        <div class="cell large-6">
+                            {{ components.researchpreview(exp.title, exp.location, exp.years, exp.advisors) }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <a href="resume.html#research">view all research experience...</a>
+            </div>
+        </section>
+        <section id="research" class="hide-for-large scroll-snap-group">
+            <h2><i class="bi-clipboard-data"></i> research experience</h2>
+            <div class="grid-x grid-margin-x">
+                {% for exp in researchExperience %}
+                    <div class="cell large-6">
+                        {{ components.researchpreview(exp.title, exp.location, exp.years, exp.advisors) }}
+                    </div>
+                {% endfor %}
+            </div>
+            <a href="resume.html#research">view all research experience...</a>
+        </section>
+        <section id="awards" class="scroll-snap-group">
+            <h2><i class="bi-award"></i> awards</h2>
+            <div class="grid-x grid-margin-x">
+                {% for award in featuredAwards %}
+                    <div class="cell medium-6">
+                        {{ components.awardpreview(award.name, award.year) }}
+                    </div>
+                {% endfor %}
+            </div>
+            <a href="resume.html#awards">view all awards...</a>
+        </section>
+        <section id="contact" class="scroll-snap-group">
+            <h2><i class="bi-at"></i> let's get in touch</h2>
+            <p>I'm always on the lookout for new opportunities. If you'd like to contact me, click one of the icons below!</p>
+            <ul class="menu">
+                <li>
+                    <a href="mailto:{{contact.email}}" aria-label="Email danlliu@umich.edu">
+                        <i class="bi-envelope" style="font-size: 2rem;" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{contact.linkedin}}" target="_blank" rel="noopener noreferrer" aria-label="My LinkedIn">
+                        {{ components.simpleicon('linkedin') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{contact.github}}" target="_blank" rel="noopener noreferrer" aria-label="My GitHub">
+                        {{ components.simpleicon('github') }}
+                    </a>
+                </li>
+            </ul>
+            <h3>check out my resume</h3>
+            <a href="resume.html">view my resume</a>
+            <p>Did you like my website? Do you think it's absolutely garbage? Leave some feedback or check out the source code at <a href="https://github.com/danlliu/danlliu.github.io">my GitHub page!</a></p>
+        </section>
+{% endblock %}

@@ -1,0 +1,173 @@
+{
+    "path": "index.html",
+    "base_template": "index.html",
+    "context": {
+        "aboutme": "Hello world! I'm Daniel, a computer science, chemistry, and business student at the University of Michigan in Ann Arbor. I'm passionate about combining ideas from different fields to further society. Find out more about me below!",
+        "education": [
+            {
+                "title": "University of Michigan",
+                "subtitle": "College of Literature, Science, and the Arts",
+                "degree": "B.S.Chem in Computer Science and Chemistry",
+                "years": "2019 - 2024",
+                "gpa": "3.9"
+            },
+            {
+                "title": "University of Michigan",
+                "subtitle": "Ross School of Business",
+                "degree": "B.B.A. in Business Administration",
+                "years": "2019 - 2024",
+                "gpa": "3.9"
+            }
+        ],
+        "featuredCourses": [
+            {
+                "title": "EECS 388",
+                "subtitle": "Introduction to Computer Security"
+            },
+            {
+                "title": "EECS 441",
+                "subtitle": "Mobile App Development for Entrepreneurs"
+            },
+            {
+                "title": "EECS 482",
+                "subtitle": "Introduction to Operating Systems"
+            },
+            {
+                "title": "EECS 485",
+                "subtitle": "Web Systems"
+            },
+            {
+                "title": "EECS 493",
+                "subtitle": "User Interface Development"
+            }
+        ],
+        "featuredProjects": [
+            {
+                "title": "danlliu.github.io",
+                "subtitle": "My personal website.",
+                "langs": ["html5", "css3", "less", "javascript", "python", "gnubash", "markdown", "githubactions", "github", "githubpages"],
+                "loc": 500,
+                "gh": "https://github.com/danlliu/danlliu.github.io",
+                "ghp": "https://danlliu.github.io"
+            },
+            {
+                "title": "webapp",
+                "subtitle": "A simple social media website.",
+                "langs": ["html5", "css3", "javascript", "python", "bootstrap", "flask", "sqlite", "react", "github"],
+                "loc": 1000,
+                "gh": "https://github.com/danlliu/webapp"
+            },
+            {
+                "title": "pdp",
+                "subtitle": "PDP-1 assembler and simulator.",
+                "langs": ["cplusplus", "github"],
+                "loc": 2000,
+                "gh": "https://github.com/danlliu/pdp"
+            },
+            {
+                "title": "linktracker",
+                "subtitle": "Virtual Meeting Link Organizer",
+                "langs": ["html5", "css3", "bootstrap", "javascript", "vuedotjs", "github", "githubpages"],
+                "loc": 800,
+                "gh": "https://github.com/danlliu/linktracker",
+                "ghp": "https://danlliu.github.io/linktracker"
+            },
+            {
+                "title": "splitter",
+                "subtitle": "Bill Splitting Calculator",
+                "langs": ["html5", "css3", "javascript", "react", "github", "githubpages"],
+                "loc": 300,
+                "gh": "https://github.com/danlliu/splitter",
+                "ghp": "https://danlliu.github.io/splitter"
+            },
+            {
+                "title": "LC2K01",
+                "subtitle": "Assembly Simulator",
+                "langs": ["html5", "css3", "javascript", "bootstrap", "github", "githubpages"],
+                "loc": 1500,
+                "gh": "https://github.com/danlliu/lc2k01",
+                "ghp": "https://danlliu.github.io/lc2k01/"
+            }
+        ],
+        "workExperience": [
+            {
+                "title": "Instructional Aide: EECS 280, 281, 370, 388",
+                "location": "University of Michigan College of Engineering",
+                "years": "Aug 2020 - Present"
+            },
+            {
+                "title": "Software Development Engineer Intern",
+                "location": "Amazon: Lab126",
+                "years": "May 2022 - July 2022"
+            },
+            {
+                "title": "Competitive Director: StarCraft II",
+                "location": "University of Michigan Esports",
+                "years": "Mar 2022 - Present"
+            },
+            {
+                "title": "Vice President of Infrastructure",
+                "location": "Quantitative Investment Society",
+                "years": "Jan 2022 - Present"
+            }
+        ],
+        "researchExperience": [
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Electrical Engineering and Computer Science",
+                "years": "May 2022 - Present",
+                "advisors": [
+                    {
+                        "name": "Prof. Roya Ensafi",
+                        "link": "https://ensa.fi/"
+                    }
+                ],
+                "description": "I will be working with Prof. Ensafi on internet censorship measurement and monitoring."
+            },
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Electrical Engineering and Computer Science",
+                "years": "Jan 2022 - Present",
+                "advisors": [
+                    {
+                        "name": "Prof. Trevor Mudge",
+                        "link": "https://tnm.engin.umich.edu/"
+                    },
+                    {
+                        "name": "Prof. Ron Dreslinski",
+                        "link": "https://web.eecs.umich.edu/~rdreslin/"
+                    }
+                ],
+                "description": "Working under Profs. Mudge and Dreslinski, I have been developing software and hardware techniques to optimize subgraph matching on temporal graphs."
+            },
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Chemistry",
+                "years": "Aug 2019 - Present",
+                "advisors": [
+                    {
+                        "name": "Prof. Melanie Sanford",
+                        "link": "https://sites.lsa.umich.edu/msanford-lab/"
+                    }
+                ],
+                "description": "Currently, I am working with Prof. Melanie Sanford at the University of Michigan, using a combined experimental and computational approach to expand the scope of C-H activation methodology. For this research, I received the 2022 Goldwater Scholarship and a fellowship through the Margaret &amp; Herman Sokol Award in 2020."
+            }
+        ],
+        "featuredAwards": [
+            {
+                "name": "Barry M. Goldwater Scholarship",
+                "year": "2022"
+            },
+            {
+                "name": "Kathleen Haller Ryan Scholarship",
+                "year": "2022"
+            }
+        ],
+        "contact": {
+            "langs": ["github", "linkedin"],
+            "email": "danlliu@umich.edu",
+            "github": "https://github.com/danlliu",
+            "linkedin": "https://www.linkedin.com/in/danlliu"
+        }
+    }
+}

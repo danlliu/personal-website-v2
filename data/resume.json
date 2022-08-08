@@ -1,0 +1,297 @@
+{
+    "path": "resume.html",
+    "base_template": "resume.html",
+    "context": {
+        "courses": [
+            {
+                "title": "EECS 203",
+                "subtitle": "Discrete Mathematics",
+                "description": "Foundations of theoretical computer science. EECS 203 covers proofs and proof techniques, Boolean logic, combinatorics, induction, sets and functions, relations, and graphs."
+            },
+            {
+                "title": "EECS 280",
+                "subtitle": "Programming and Introductory Data Structures",
+                "description": "Introductory C++ programming. EECS 280 covers pointers, dynamic memory, structs and classes, inheritance, linked lists, binary search trees, and recursion. Projects include: <ul> <li><b>Euchre</b>: implementaiton of a game of Euchre, specifying various parameters via command line arguments. Euchre tests understanding of and ability to implement inheritance in C++ classes, as well as polymorphism.</li> <li><b>Web Server</b>: implementation of a REST API web server for an office hours queue. Tests understanding of and ability to implement linked lists, as well as the usage of a C++ JSON library.</li> <li><b>Machine Learning</b>: implementation of a Naive Bayes classifier using a bag of words model for NLP classification. Tests understanding of and ability to implement binary search trees, as well as usage of the C++ standard library map.</li> </ul>"
+            },
+            {
+                "title": "EECS 281",
+                "subtitle": "Data Structures and Algorithms",
+                "description": "Introduction to data structures and algorithms. EECS281 covers algorithms such as binary search, BFS and DFS, sorting, shortest path algorithms, and dynamic programming; as well as data structures such as binary heaps and hash maps. Projects include: <ul> <li><b>Puzzle</b>: implemented BFS and DFS algorithms to solve a puzzle game, where the player can open and close pathways by walking over certain tiles.</li> <li><b>Stocks</b>: used priority queues to simulate a stock market, where buyers and sellers propose different prices. Various statistics can also be printed during the simulation, including a running median (also implemented with priority queues)</li> <li><b>SillyQL</b>: implementation of a simple version of SQL, with column indices to speed up searching tables. Tested understanding of and ability to use hash maps.</li> <li><b>Drones</b>: implementation of MST algorithms, and a branch-and-bound search as well as a heuristic-based traveling salesperson solution.</li> </ul>"
+            },
+            {
+                "title": "EECS 370",
+                "subtitle": "Introduction to Computer Organization",
+                "description": "Study of computer architecture. EECS 370 covers assembly, processor datapaths, caching, and virtual memory. Projects in EECS 370 include: <ul> <li><b>Multifile Assembler and linker</b>: implementation of an assembler and linker for LC2K, a simplified assembly language. The assembler converts LC2K assembly files into object files, and the linker combines object files into a machine code executable.</li> <li><b>Pipeline Simulator</b>: simulator for a pipeline datapath, including logic for data forwarding and branch prediction.</li> <li>Cache Simulator: simulator for a single cycle datapath with a memory cache, including support for various cache configurations.</li> </ul>"
+            },
+            {
+                "title": "EECS 376",
+                "subtitle": "Foundations of Computer Science",
+                "description": "Theoretical computer science. EECS 376 covers computability, recognizability, Turing machines and Turing completeness, complexities (P vs NP), and cryptography."
+            },
+            {
+                "title": "EECS 388",
+                "subtitle": "Introduction to Computer Security",
+                "description": "Comprehensive computer security course. EECS 388 covers various aspects of computer security and the range of attack surfaces programs provide, such as websites, networks, and even application code itself. Projects include: <ul> <li><b>Web Security</b>: a practical demonstration of attacks such as SQL injection, XSS attacks, and CSRF attacks.</li> <li><b>Networking</b>: implementation of a man-in-the-middle attack using the Go programming language, as well as detectors for attacks such as SYN scanning and ARP spoofing.</li> <li><b>Forensics</b>: simulated digital forensic examination of a disk image.</li> </ul>"
+            },
+            {
+                "title": "EECS 441",
+                "subtitle": "Mobile App Development for Entrepreneurs",
+                "description": "Introduction to app development, focusing on coordinating a front-end app and a back-end server. <ul><li><b>Final Project</b>: Dungeons and Dragons Organizer. Our group developed an app that allows players of Dungeons and Dragons, a tabletop RPG, to keep track of their characters and campaigns. The front-end app was developed using XCode and SwiftUI, while the backend was implemented with Django and PostgreSQL. The final app can be found at <a href=\"https://github.com/danlliu/letteamnamestringnil\">https://github.com/danlliu/letteamnamestringnil</a></li></ul>"
+            },
+            {
+                "title": "EECS 482",
+                "subtitle": "Introduction to Operating Systems",
+                "description": "Study of operating systems and low-level functionality. EECS 482 covers multithreading and concurrency, virtual memory, file systems, virtual machines, and remote procedure calls. Projects in EECS 482 include: <ul> <li><b>Disk Scheduler</b>: implementation of a multithreaded producer-consumer queue for servicing disk requests, using a shortest seek time first (SSTF) algorithm.</li> <li><b>Thread Library</b>: implementation of various multithreading utilities, such as threads, mutexes, and condition variables, as well as handling context switches between threads and blocking threads.</li> <li><b>Virtual Memory</b>: implementation of a memory management unit (MMU) to manage virtual memory inside a portion of a process's address space. Tests understanding of the implementation of virtual memory, including page tables, paging in and out from disk, and the clock eviction algorithm.</li> <li><b>File Server</b>: implementation of a file server working with inodes on disk to represent files. Tests understanding of the underlying implementation of file systems, as well as the usage of Berkeley sockets.</li> </ul>"
+            },
+            {
+                "title": "EECS 485",
+                "subtitle": "Web Systems",
+                "description": "Comprehenisve overview of web technologies. EECS 485 covers site architectures such as static, server-side dynamic, and client-side dynamic sites; and web technologies such as map-reduce, search engines, and Tor. Projects in EECS 485 include: <ul> <li><b>Client-Side Dynamic Insta485</b>: implementation of a client-side dynamic Instagram clone, using HTML, Flask, and React.js.</li> <li><b>Map Reduce</b>: Python implementation of a multiprocessed and multithreaded map reduce framework.</li> <li><b>Search Engine</b>: </li> Implementation of a map reduce pipeline to develop a search engine using the TF-IDF heuristic.</li></ul>"
+            },
+            {
+                "title": "EECS 493",
+                "subtitle": "User Interface Development",
+                "description": "Study of user interface design, including human centered design and human-computer interaction. EECS 493 covers the fundamentals of good user interface design, as well as techniques for improving the user experience and accessibility. EECS 493 also covers approaches for testing user interfaces such as heuristic evaluation and user studies. <ul> <li><b>Final Project</b>: <i>kernel</i>, a task manager website. Our group developed a web application that helps users track time spent on various tasks. The final code can be found at <a href=\"https://github.com/danlliu/kernel\">https://github.com/danlliu/kernel</a>, and is deployed to GitHub pages at <a href=\"https://danlliu.github.io/kernel\">https://danlliu.github.io/kernel</a></li> </ul>"
+            },
+            {
+                "title": "EECS 498",
+                "subtitle": "Special Topics: Quantum Computing for the Computer Scientist",
+                "description": "<span style=\"color: red\">upcoming Fall 2022!</span>"
+            }
+        ],
+        "projects": [
+            {
+                "title": "danlliu.github.io",
+                "subtitle": "My personal website.",
+                "description": "The second iteration of my personal website. Between the first and second iterations, I've learned a lot about web development, CI/CD, and technologies such as Jinja templates and GitHub Actions. Enjoy!",
+                "langs": ["html5", "css3", "less", "javascript", "python", "gnubash", "markdown", "githubactions", "github", "githubpages"],
+                "loc": 500,
+                "gh": "https://github.com/danlliu/danlliu.github.io",
+                "ghp": "https://danlliu.github.io"
+            },
+            {
+                "title": "webapp",
+                "subtitle": "A simple social media website.",
+                "description": "As practice for my Web Systems exam, I put together a social media website utilizing Python, Flask, SQLite, and React. The website is relatively simple, but demonstrates many of the techniques I learned.",
+                "langs": ["html5", "css3", "javascript", "python", "bootstrap", "flask", "sqlite", "react", "github"],
+                "loc": 1000,
+                "gh": "https://github.com/danlliu/webapp"
+            },
+            {
+                "title": "pdp",
+                "subtitle": "PDP-1 assembler and simulator.",
+                "description": "The PDP-1 computer was one of the earliest computers, and the birthplace of many programs, including Spacewar, one of the first video games to be created. With my experience in computer architecture, I re-created the PDP-1's processor with C++17, complete with an assembler to convert assembly into punched tape machine code.",
+                "langs": ["cplusplus", "github"],
+                "loc": 2000,
+                "gh": "https://github.com/danlliu/pdp"
+            },
+            {
+                "title": "Turret Wars",
+                "subtitle": "Space-themed macOS shooter game.",
+                "description": "A space-themed arcade shooter game. I designed this game over the course of one week, using Apple's SpriteKit game framework and the Swift programming language. To this day, it's the largest project I've written from the ground up, with over 3000 lines of Swift.",
+                "langs": ["swift"],
+                "loc": 3000
+            },
+            {
+                "title": "linktracker",
+                "subtitle": "Virtual Meeting Link Organizer",
+                "description": "During the pandemic, the only way to meet up with coworkers or friends was through virtual conferencing tools. However, it can be tough to keep track of all the links used to join different meetings. <i>linktracker</i> helps you keep track of meeting links in the browser, remembering when meetings take place and their associated links.", 
+                "langs": ["html5", "css3", "bootstrap", "javascript", "vuedotjs", "github", "githubpages"],
+                "loc": 800,
+                "gh": "https://github.com/danlliu/linktracker",
+                "ghp": "https://danlliu.github.io/linktracker"
+            },
+            {
+                "title": "beep boop",
+                "subtitle": "Esoteric programming language.",
+                "description": "<i>beep boop</i> is the first programming language I designed, and it spawned a series of programming languages based on ideas from friends and group chats. <i>beep boop</i> utilizes a simple but powerful instruction set, specified with the keywords &quot;beep&quot; and &quot;boop&quot;.",
+                "langs": ["html5", "javascript", "bootstrap", "github", "githubpages"],
+                "loc": 500,
+                "gh": "https://github.com/danlliu/beepboop",
+                "ghp": "https://danlliu.github.io/beepboop"
+            },
+            {
+                "title": "shift",
+                "subtitle": "Esoteric programming language.",
+                "description": "Second of four in my programming languages series, <i>shift</i> returns to a more traditional syntax, inspired by Bash. Using only characters that can be accessed when the Shift key is held down on a U.S. keyboard layout, <i>shift</i> provides 26 registers and 4096 memory locations.",
+                "langs": ["html5", "javascript", "bootstrap", "github", "githubpages"],
+                "loc": 250,
+                "gh": "https://github.com/danlliu/shift",
+                "ghp": "https://danlliu.github.io/shift"
+            },
+            {
+                "title": "this is all made up",
+                "subtitle": "Esoteric programming language.",
+                "description": "<i>this is all made up</i> combines elements of assembly and two-dimensional languages such as Befunge to create a programming language that some may refer to as \"torture\". <i>this is all made up</i> was designed to be a puzzle: a simple operation such as adding two numbers can take nearly 30 lines of code and hours of planning to get right. If you choose to try it out, good luck.",
+                "langs": ["html5", "javascript", "bootstrap", "github", "githubpages"],
+                "loc": 700,
+                "gh": "https://github.com/danlliu/thisisallmadeup",
+                "ghp": "https://danlliu.github.io/thisisallmadeup"
+            },
+            {
+                "title": "creative writing",
+                "subtitle": "Esoteric programming language.",
+                "description": "The most recent addition to the programming language series, <i>creative writing</i> is a language designed around the concept of polymorphic code. By using some of the most common English words as keywords, <i>creative writing</i> programs can be disguised as other programming languages, notes, or any form of writing.",
+                "langs": ["html5", "javascript", "bootstrap", "github", "githubpages"],
+                "loc": 500,
+                "gh": "https://github.com/danlliu/creativewriting",
+                "ghp": "https://danlliu.github.io/creativewriting"
+            },
+            {
+                "title": "splitter",
+                "subtitle": "Bill Splitting Calculator",
+                "description": "Splitting the bill fairly is a lot of tedious math, so why not make a website for it?",
+                "langs": ["html5", "css3", "javascript", "react", "github", "githubpages"],
+                "loc": 300,
+                "gh": "https://github.com/danlliu/splitter",
+                "ghp": "https://danlliu.github.io/splitter"
+            },
+            {
+                "title": "chatroom",
+                "subtitle": "Live Chat Application",
+                "description": "Websockets provide a significant functionality upgrade to websites, allowing live updates between the client and the server to take place. Using socket.io, I created a simple chat application, allowing users to create new chat rooms and send messages in each room. The application runs on Express.js, Node.js, and Socket.io.",
+                "langs": ["html5", "pug", "javascript", "nodedotjs", "socketdotio", "github"],
+                "loc": 200,
+                "gh": "https://github.com/danlliu/chatroom"
+            },
+            {
+                "title": "LC2K01",
+                "subtitle": "Assembly Simulator",
+                "description": "Learning assembly is a rite of passage for programmers. Suddenly, there is no compiler managing types or memory for you. You're in control of everything, but with great power comes great responsibility, and great confusion. I created a simulator for people learning assembly to test out the LEGv8 instruction set architecture, a subset of ARMv8 that is often used in educational settings.",
+                "langs": ["html5", "css3", "javascript", "bootstrap", "github", "githubpages"],
+                "loc": 1500,
+                "gh": "https://github.com/danlliu/lc2k01",
+                "ghp": "https://danlliu.github.io/lc2k01/"
+            }
+        ],
+        "workExperience": [
+            {
+                "title": "Instructional Aide: EECS 280, 281, 370, 388",
+                "location": "University of Michigan College of Engineering",
+                "years": "Aug 2020 - Present",
+                "description": "<ul> <li>Part of the teaching staff on three main-sequence courses (700+ students) and one upper level elective (500+ students) for computer science majors at the University of Michigan.</li> <li>Taught EECS 370 during the double pace spring semester (100+ students)</li> <li>Responsibilities include:<ul> <li>Aid students in understanding concepts and completing coding projects through regularly scheduled office hours</li> <li>Reinforce conceptual understanding through weekly discussion sections</li> <li>Test student understanding of course material by devising exam questions.</li> <li>Enhance student experiences through course changes from student feedback.</li> </ul></li> </ul>"
+            },
+            {
+                "title": "Software Development Engineer Intern",
+                "location": "Amazon: Lab126",
+                "years": "May 2022 - July 2022",
+                "description": "<ul> <li>Interned at Amazon's Lab126 in Sunnyvale, CA on Android development using Kotlin and Java.</li> <li>Collaborated with full-time SDEs and other interns to integrate a front-end app with existing APIs and novel ML models.</li> </ul>"
+            },
+            {
+                "title": "Competitive Director: StarCraft II",
+                "location": "University of Michigan Esports",
+                "years": "Mar 2022 - Present",
+                "description": "<ul> <li>Competitive Director for the University of Michigan StarCraft II team</li> <li>Ensure continued sponsorship for the StarCraft II team through semesterly league registration and participation</li> <li>Organize and cast in-house tournaments, and coordinate weekly practice sessions</li> <li>Coordinate with collegiate StarCraft II leads to organize joint tournaments</li> </ul>"
+            },
+            {
+                "title": "Vice President of Infrastructure",
+                "location": "Quantitative Investment Society",
+                "years": "Jan 2022 - Present",
+                "description": "<ul> <li>Organize and develope programs to create and test trading strategies</li> <li>Coordinate with board members to ensure that all aspects of trading strategies were thoroughly considered and tested</li> </ul>"
+            },
+            {
+                "title": "Mathematics Tutor",
+                "location": "University of Michigan Comprehensive Studies Program",
+                "years": "Aug 2019 - May 2021",
+                "description": "<ul> <li>Tutored students in college-level precalculus and calculus through the Comprehensive Studies Program, a learning community at the University of Michigan serving underrepresented students</li> <li>Responsibilities include: <ul> <li>Reinforce student understanding of course concepts by guiding them through solutions to practice problems</li> <li>Help students prepare for exams by recognizing and reviewing concepts they are struggling with</li> </ul></li> </ul>"
+            }
+        ],
+        "researchExperience": [
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Electrical Engineering and Computer Science",
+                "years": "May 2022 - Present",
+                "advisors": [
+                    {
+                        "name": "Prof. Roya Ensafi",
+                        "link": "https://ensa.fi/"
+                    }
+                ],
+                "description": "I will be working with Prof. Ensafi on internet censorship measurement and monitoring."
+            },
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Electrical Engineering and Computer Science",
+                "years": "Jan 2022 - Present",
+                "advisors": [
+                    {
+                        "name": "Prof. Trevor Mudge",
+                        "link": "https://tnm.engin.umich.edu/"
+                    },
+                    {
+                        "name": "Prof. Ron Dreslinski",
+                        "link": "https://web.eecs.umich.edu/~rdreslin/"
+                    }
+                ],
+                "description": "Working under Profs. Mudge and Dreslinski, I have been developing software and hardware techniques to optimize subgraph matching on temporal graphs."
+            },
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Chemistry",
+                "years": "Aug 2019 - Present",
+                "advisors": [
+                    {
+                        "name": "Prof. Melanie Sanford",
+                        "link": "https://sites.lsa.umich.edu/msanford-lab/"
+                    }
+                ],
+                "description": "Currently, I am working with Prof. Melanie Sanford at the University of Michigan, using a combined experimental and computational approach to expand the scope of C-H activation methodology. For this research, I received the 2022 Goldwater Scholarship and a fellowship through the Margaret &amp; Herman Sokol Award in 2020."
+            },
+            {
+                "title": "Student Researcher",
+                "location": "University of Michigan Department of Electrical Engineering and Computer Science",
+                "years": "May 2021 - Dec 2021",
+                "advisors": [
+                    {
+                        "name": "Prof. Manos Kapritsos",
+                        "link": "https://web.eecs.umich.edu/~manosk/"
+                    }
+                ],
+                "description": "I worked with Prof. Kapritsos on improving the usability of Dafny, a high-level programming language for verification of software systems. Through my research, I worked on developing methods to detect matching loops earlier, identifying patterns that could cause problems during verification."
+            },
+            {
+                "title": "Student Researcher",
+                "location": "The University of Toledo, Department of Chemistry and Biochemistry",
+                "years": "Mar 2017 - Aug 2019",
+                "advisors": [
+                    { 
+                        "name": "Prof. Michael Young",
+                        "link": "https://www.younggroupchem.com/"
+                    }
+                ],
+                "description": "I worked under Prof. Michael Young at The University of Toledo, developing new C-H activation methodology for amine substrates. My research focused on expanding the substrate scope of C-H activation reactions by using carbon dioxide to promote C-H activation.<br/><b>Publications:</b><ul> <li>Kapoor, M.; <b>Liu, D.;</b>, Young, M. C. \"Carbon Dioxide Mediated C(sp3)-H Arylation of Amine Substrates.\" <i>J. Am. Chem. Soc.</i> <b>2018</b>, <i>140</i>, 6818-6822.</li> <li>Kapoor, M.; Chand-Thakuri, P.; Maxwell, J. M.; <b>Liu, D.</b>; Zhou, H.; Young, M. C. \"Carbon Dioxide-Driven Palladium-Catalyzed C-H Activation of Amines: A Unified Approach for the Arylation of Aliphatic and Aromatic Primary and Secondary Amines.\" <i>Synlett</i> <b>2019</b>, <i>30</i>, 519-524.</li> <li>Young, M. C.; Djernes, K. E.; Payton, J. L.; <b>Liu, D.</b>; Hooley, R. J. \"Resorcin[4]arenes: A Simple Scaffold to Study Supramolecular Self-Assembly and Host:Guest Interactions for the Undergraduate Curriculum.\" <i>J. Chem. Ed.</i> <b>2019</b>, <i>96</i>, 4, 781-785.</li> <li>Chand-Thakuri, P.; Alahakoon, I.; <b>Liu, D.</b>, Kapoor, M.; Kennedy, J. F.; Jenkins, K. W.; Rabon, A. M.; Young, M. C. <i>Synthesis</i> <b>2022</b>, <i>54(02)</i>, 341-352.</li> </ul>"
+            }
+        ],
+        "awards": [
+            {
+                "name": "Barry M. Goldwater Scholarship",
+                "year": "2022"
+            },
+            {
+                "name": "Kathleen Haller Ryan Scholarship",
+                "year": "2022"
+            },
+            {
+                "name": "Margaret & Herman Sokol Award",
+                "year": "2020"
+            }
+        ],
+        "skills": {
+            "languages": {
+                "langs": ["cplusplus", "c", "python", "html5", "jinja", "pug", "css3", "less", "java", "javascript", "kotlin", "swift", "gnubash", "sqlite", "postgresql", "latex", "go", "csharp", "powershell"]
+            },
+            "frameworks": {
+                "langs": ["android", "chartdotjs", "django", "flask", "jquery", "nodedotjs", "numpy", "pandas", "pytest", "react", "socketdotio", "vuedotjs"]
+            },
+            "ides": {
+                "langs": ["androidstudio", "clion", "datagrip", "gnuemacs", "spacemacs", "intellijidea", "jetbrains", "pycharm", "vim", "visualstudiocode", "webstorm", "xcode"]
+            },
+            "oses": {
+                "langs": ["macos", "ubuntu", "windows"]
+            },
+            "technologies": {
+                "langs": ["amazonaws", "cmake", "cocoapods", "docker", "git", "github", "githubactions", "githubpages", "gitlab", "jupyter", "nginx", "npm", "obsstudio", "overleaf", "slack", "tmux", "trello", "webpack"]
+            }
+        }
+    }
+}
