@@ -166,10 +166,16 @@
         ],
         "workExperience": [
             {
-                "title": "Instructional Aide: EECS 280, 281, 370",
+                "title": "Instructional Aide: EECS 280, 281, 370, 388",
                 "location": "University of Michigan College of Engineering",
                 "years": "Aug 2020 - Present",
-                "description": "<ul> <li>Part of the teaching staff on three main-sequence courses (700+ students) for computer science majors at the University of Michigan.</li> <li>Taught EECS 370 during the double pace spring semester (100+ students)</li> <li>Responsibilities include:<ul> <li>Aid students in understanding concepts and completing coding projects through regularly scheduled office hours</li> <li>Reinforce conceptual understanding through weekly discussion sections</li> <li>Test student understanding of course material by devising exam questions.</li> <li>Enhance student experiences through course changes from student feedback.</li> </ul></li> </ul>"
+                "description": "<ul> <li>Part of the teaching staff on three main-sequence courses (700+ students) and one upper level elective (500+ students) for computer science majors at the University of Michigan.</li> <li>Taught EECS 370 during the double pace spring semester (100+ students)</li> <li>Responsibilities include:<ul> <li>Aid students in understanding concepts and completing coding projects through regularly scheduled office hours</li> <li>Reinforce conceptual understanding through weekly discussion sections</li> <li>Test student understanding of course material by devising exam questions.</li> <li>Enhance student experiences through course changes from student feedback.</li> </ul></li> </ul>"
+            },
+            {
+                "title": "Software Development Engineer Intern",
+                "location": "Amazon: Lab126",
+                "years": "May 2022 - July 2022",
+                "description": "<ul> <li>Interned at Amazon's Lab126 in Sunnyvale, CA on Android development using Kotlin and Java.</li> <li>Collaborated with full-time SDEs and other interns to integrate a front-end app with existing APIs and novel ML models.</li> </ul>"
             },
             {
                 "title": "Competitive Director: StarCraft II",

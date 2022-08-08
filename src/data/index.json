@@ -67,7 +67,6 @@
             {
                 "title": "linktracker",
                 "subtitle": "Virtual Meeting Link Organizer",
-                "description": "During the pandemic, the only way to meet up with coworkers or friends was through virtual conferencing tools. However, it can be tough to keep track of all the links used to join different meetings. <i>linktracker</i> helps you keep track of meeting links in the browser, remembering when meetings take place and their associated links.", 
                 "langs": ["html5", "css3", "bootstrap", "javascript", "vuedotjs", "github", "githubpages"],
                 "loc": 800,
                 "gh": "https://github.com/danlliu/linktracker",
@@ -76,7 +75,6 @@
             {
                 "title": "splitter",
                 "subtitle": "Bill Splitting Calculator",
-                "description": "Splitting the bill fairly is a lot of tedious math, so why not make a website for it?",
                 "langs": ["html5", "css3", "javascript", "react", "github", "githubpages"],
                 "loc": 300,
                 "gh": "https://github.com/danlliu/splitter",
@@ -85,7 +83,6 @@
             {
                 "title": "LC2K01",
                 "subtitle": "Assembly Simulator",
-                "description": "Learning assembly is a rite of passage for programmers. Suddenly, there is no compiler managing types or memory for you. You're in control of everything, but with great power comes great responsibility, and great confusion. I created a simulator for people learning assembly to test out the LEGv8 instruction set architecture, a subset of ARMv8 that is often used in educational settings.",
                 "langs": ["html5", "css3", "javascript", "bootstrap", "github", "githubpages"],
                 "loc": 1500,
                 "gh": "https://github.com/danlliu/lc2k01",
@@ -94,9 +91,14 @@
         ],
         "workExperience": [
             {
-                "title": "Instructional Aide: EECS 280, 281, 370",
+                "title": "Instructional Aide: EECS 280, 281, 370, 388",
                 "location": "University of Michigan College of Engineering",
                 "years": "Aug 2020 - Present"
+            },
+            {
+                "title": "Software Development Engineer Intern",
+                "location": "Amazon: Lab126",
+                "years": "May 2022 - July 2022"
             },
             {
                 "title": "Competitive Director: StarCraft II",
@@ -107,11 +109,6 @@
                 "title": "Vice President of Infrastructure",
                 "location": "Quantitative Investment Society",
                 "years": "Jan 2022 - Present"
-            },
-            {
-                "title": "Mathematics Tutor",
-                "location": "University of Michigan Comprehensive Studies Program",
-                "years": "Aug 2019 - May 2021"
             }
         ],
         "researchExperience": [
