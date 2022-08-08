@@ -78,6 +78,14 @@
                 "gh": "https://github.com/danlliu/webapp"
             },
             {
+                "title": "pdp",
+                "subtitle": "PDP-1 assembler and simulator.",
+                "description": "The PDP-1 computer was one of the earliest computers, and the birthplace of many programs, including Spacewar, one of the first video games to be created. With my experience in computer architecture, I re-created the PDP-1's processor with C++17, complete with an assembler to convert assembly into punched tape machine code.",
+                "langs": ["cplusplus", "github"],
+                "loc": 2000,
+                "gh": "https://github.com/danlliu/pdp"
+            },
+            {
                 "title": "Turret Wars",
                 "subtitle": "Space-themed macOS shooter game.",
                 "description": "A space-themed arcade shooter game. I designed this game over the course of one week, using Apple's SpriteKit game framework and the Swift programming language. To this day, it's the largest project I've written from the ground up, with over 3000 lines of Swift.",
@@ -270,7 +278,7 @@
                 "langs": ["android", "chartdotjs", "django", "flask", "jquery", "nodedotjs", "numpy", "pandas", "pytest", "react", "socketdotio", "vuedotjs"]
             },
             "ides": {
-                "langs": ["androidstudio", "clion", "datagrip", "intellijidea", "jetbrains", "pycharm", "vim", "visualstudiocode", "webstorm", "xcode"]
+                "langs": ["androidstudio", "clion", "datagrip", "gnuemacs", "spacemacs", "intellijidea", "jetbrains", "pycharm", "vim", "visualstudiocode", "webstorm", "xcode"]
             },
             "oses": {
                 "langs": ["macos", "ubuntu", "windows"]

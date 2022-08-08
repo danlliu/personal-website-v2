@@ -58,10 +58,11 @@
                 "gh": "https://github.com/danlliu/webapp"
             },
             {
-                "title": "Turret Wars",
-                "subtitle": "Space-themed macOS shooter game.",
-                "langs": ["swift"],
-                "loc": 3000
+                "title": "pdp",
+                "subtitle": "PDP-1 assembler and simulator.",
+                "langs": ["cplusplus", "github"],
+                "loc": 2000,
+                "gh": "https://github.com/danlliu/pdp"
             },
             {
                 "title": "linktracker",
